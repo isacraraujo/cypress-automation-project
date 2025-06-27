@@ -5,7 +5,9 @@ module.exports = defineConfig({
     url_application: 'https://front.serverest.dev',
     url_api:         'https://serverest.dev',
     user_auth:       'isac@qa.com',
-    password_auth:   '123456'
+    password_auth:   '123456',
+    user_admin:      'isac-admin@qa.com',
+    password_admin:  '123456'
   },
   e2e: {
     setupNodeEvents(on, config) {
@@ -15,8 +17,7 @@ module.exports = defineConfig({
       config.desktopViewWidth  = 1368;
       config.desktopViewHeight = 768;
       return config;
-    },
-    
+    }
   },
   // configurações personalizadas do relatório Mochawesome
   reporter: 'cypress-mochawesome-reporter',
@@ -29,5 +30,5 @@ module.exports = defineConfig({
     embeddedScreenshots: true,
     inlineAssets:        true,
     saveAllAttempts:     false,
-  },
+  }
 });

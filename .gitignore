@@ -5,7 +5,7 @@ package-lock.json
 screenshots/
 
 # Relatórios Mochawesome que são gerados a cada execução
-# reports/
+reports/
 
 # pasta de Downloads do Cypress
 downloads/

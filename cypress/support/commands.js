@@ -7,3 +7,13 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
+
+// Comando personalizado para fazer login diretamente no sistema
+Cypress.Commands.add('login_frontend', (url, user, password) => {
+  cy.visit(`${url}/login`)
+  cy.contains('h1','Login').should('be.visible')
+  cy.get('[data-testid="email"]').type(user)
+  cy.get('[data-testid="senha"]').type(password)
+  cy.get('[data-testid="entrar"]').click()
+  cy.contains('h1','Bem Vindo').should('be.visible')
+});

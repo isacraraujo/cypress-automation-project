@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "cypress": "^14.5.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "scripts": {
+    "cy:installer": "npm install -D cypress && npm install -D cypress-mochawesome-reporter",
+    "cy:run_chrome": "npx cypress run --browser chrome",
+    "report": "start cypress/reports/report.html"
+  }
+}

@@ -1,3 +1,15 @@
+# Package-lock sobre informações é gerado automaticamente
+package-lock.json
+
+# Screenshots que são gerados automaticamente em caso de erro
+screenshots/
+
+# Relatórios Mochawesome que são gerados a cada execução
+reports/
+
+# pasta de Downloads do Cypress
+downloads/
+
 # Logs
 logs
 *.log

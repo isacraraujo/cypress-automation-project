@@ -1,3 +1,6 @@
+# Pasta temporário de execução
+temp/
+
 # Package-lock sobre informações é gerado automaticamente
 package-lock.json
 

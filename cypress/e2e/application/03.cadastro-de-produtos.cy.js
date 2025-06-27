@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker'
 
-describe('Suíte de Teste: Fluxo de Compras', () => {
+describe('Suíte de Teste: Cadastro de Produtos', () => {
   const url_application = Cypress.env('url_application')
   const userlogin       = Cypress.env('user_auth')
   const passwordlogin   = Cypress.env('password_auth')

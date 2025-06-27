@@ -4,8 +4,12 @@
     "cypress-mochawesome-reporter": "^3.8.2"
   },
   "scripts": {
-    "cy:installer": "npm install -D cypress && npm install -D cypress-mochawesome-reporter",
+    "cy:installer": "npm install -D cypress && npm install -D cypress-mochawesome-reporter && npm install -D @faker-js/faker",
     "cy:run_chrome": "npx cypress run --browser chrome",
-    "report": "start cypress/reports/report.html"
+    "report": "start cypress/reports/report.html",
+    "cypress": "npm run cy:run_chrome && npm run report"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.8.0"
   }
 }

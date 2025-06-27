@@ -1,5 +1,5 @@
 # Tarefas
-- Implementar Casos de Testes para Application & API
+- Implementar Casos de Testes para Application & API #done
 - Implementar documentação utilizando Gherkin
 - Implementar pipelines com Jenkins CI/CD
 - Implementar container com Docker

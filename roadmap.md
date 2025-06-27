@@ -5,7 +5,7 @@
     - Deve Fazer Login com Sucesso
   
 ## Suíte de Teste (Application): Cadastrar Usuários:
-    - 
+    - Deve Cadastrar Novo Usuário Comum com Sucesso
 
 ## Suíte de Teste (Application): Fluxo de Compras:
     - 

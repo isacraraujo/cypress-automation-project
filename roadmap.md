@@ -8,7 +8,7 @@
     - Deve Cadastrar Novo Usuário Comum com Sucesso
 
 ## Suíte de Teste (Application): Fluxo de Compras:
-    - 
+    - Deve Cadastrar Múltiplos Produtos a partir de uma Base de Dados
 
 ## Suíte de Teste (API): Efetuar Login
     - 

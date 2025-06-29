@@ -34,16 +34,13 @@ pipeline {
       }
       steps {
         catchError(message:'Erro ao Emitir Relatórios') {
-          publishHTML([
-            allowMissing: false,
-            alwaysLinkToLastBuild: false,
-            keepAll: false,
+          publishHTML (target : [allowMissing: false,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
             reportDir: 'cypress/reports',
             reportFiles: 'report.html',
-            reportName: 'Relatorio de Testes Automatizados em Cypress',
-            reportName: 'relatorio-de-teste', 
-            reportTitles: '',
-            useWrapperFileDirectly: true
+            reportName: 'Relatorio de Execução de Testes',
+            reportTitles: 'Relatorio de Testes Automatizados em Cypress'
           ])
         }
       }

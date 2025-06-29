@@ -1,13 +1,14 @@
 const { defineConfig } = require("cypress");
+require('dotenv').config();
 
 module.exports = defineConfig({
   env: {
-    url_application: 'https://front.serverest.dev',
-    url_api:         'https://serverest.dev',
-    user_auth:       'isac@qa.com',
-    password_auth:   '123456',
-    user_admin:      'isac-admin@qa.com',
-    password_admin:  '123456'
+    url_application: process.env.URL_APPLICATION,
+    url_api:         process.env.URL_API,
+    user_auth:       process.env.USER_AUTH,
+    password_auth:   process.env.PASSWORD_AUTH,
+    user_admin:      process.env.USER_ADMIN,
+    password_admin:  process.env.PASSWORD_ADMIN
   },
   e2e: {
     setupNodeEvents(on, config) {
